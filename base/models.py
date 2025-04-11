@@ -8,6 +8,10 @@ class Profile(models.Model):
     email = models.EmailField(max_length=255, null=True, blank=True)
     username = models.CharField(max_length=255, null=True, blank=True)
     bio = models.TextField(null=True, blank=True)
+    education = models.TextField(null=True, blank=True)
+    current_learning = models.TextField(null=True, blank=True)
+    previous_work = models.TextField(null=True, blank=True)
+    goals = models.TextField(null=True, blank=True)
     image = models.ImageField(null=True, blank=True, default="/placeholder.png")
     _id = models.AutoField(primary_key=True, editable=False)
 
