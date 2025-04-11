@@ -27,14 +27,3 @@ class Project(models.Model):
 
     def __str__(self):
         return f"{self.title} ({self.user.username})"
-    
-class Review(models.Model):
-    project= models.ForeignKey(Project, on_delete=models.CASCADE, null=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-    name = models.CharField(max_length=255, null=True, blank=True)
-    rating = models.IntegerField(null=True, blank=True, default=0, validators=[MaxValueValidator(5)])
-    comment = models.TextField(null=True, blank=True)
-    _id = models.AutoField(primary_key=True, editable=False)
-
-    def __str__(self):
-        return str(self.rating)

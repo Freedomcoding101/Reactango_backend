@@ -3,7 +3,7 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from .models import Project, Review, Profile
+from .models import Project, Profile
 from .serializers import ProjectSerializer, ProfileSerializer
 from django.contrib.auth.models import AnonymousUser
 
