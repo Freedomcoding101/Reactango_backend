@@ -35,6 +35,12 @@ ALLOWED_HOSTS = [
 
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-6950e.up.railway.app',
+    'https://lustrous-arithmetic-6b4659.netlify.app',
+    'http://localhost:5173',
+]
+
 
 # Application definition
 
