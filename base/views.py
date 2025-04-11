@@ -11,18 +11,9 @@ from django.contrib.auth.models import AnonymousUser
 @api_view(['GET'])
 def getRoutes(request):
     routes = [
+        'api/profile/',
         'api/projects/',
-        'api/projects/create/',
-
-        'api/projects/upload/',
-
-        'api/projects/<id>/reviews/',
-
-        'api/projects/top/',
         'api/projects/<id>/',
-
-        'api/projects/delete/<id>/',
-        'api/projects/<update>/<id>/',
     ]
     return Response(routes)
 
