@@ -142,7 +142,7 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = 'static/images'
 
 CORS_ALLOWED_ORIGINS = [
-    'https://lustrous-arithmetic-6b4659.netlify.app/',
+    'https://lustrous-arithmetic-6b4659.netlify.app',
     "http://localhost:5173",
 ]
 
